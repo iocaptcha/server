@@ -1,0 +1,53 @@
+{
+  "name": "@iocaptcha/server",
+  "version": "0.0.1",
+  "description": "ES6/TS server for https://iocaptcha.com - Where security reigns, yet privacy remains.",
+  "main": "dist/server.cjs",
+  "module": "dist/server.mjs",
+  "types": "src/manager.ts",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "fix-lint": "eslint src/**/*.ts --fix",
+    "build": "rollup -c rollup.config.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "@types/axios": "^0.14.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.7",
+    "@babel/eslint-plugin": "^7.22.5",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "eslint-config-standard-with-typescript": "^36.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "rollup": "^3.26.2",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "typescript": "^5.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iocaptcha/server.git"
+  },
+  "keywords": [
+    "iocaptcha",
+    "captcha",
+    "iosec",
+    "sec",
+    "security",
+    "antibot",
+    "protection"
+  ],
+  "author": "@fuzzbuck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iocaptcha/server/issues"
+  },
+  "homepage": "https://github.com/iocaptcha/server#readme"
+}

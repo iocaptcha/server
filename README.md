@@ -35,6 +35,7 @@ iocaptcha.authenticate().then((res) => {
   }
 });
 
+let token = "..." // get token from user
 // check token
 iocaptcha.validate(token).then((result) => {
   console.log("result:", result);
@@ -45,6 +46,8 @@ iocaptcha.validate(token).then((result) => {
   }
 }).catch((err) => {
   console.log("error:", err.response.data.error);
+  // errors usually happen when the token has been invalidated (already used)
+  // or the token has expired
   // ... deny the user
 });
 

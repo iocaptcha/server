@@ -70,7 +70,7 @@ class Api {
         return __awaiter(this, void 0, void 0, function* () {
             if (typeof data === 'string') {
                 data = {
-                    pass_uuid: data,
+                    token: data,
                     invalidate: true
                 };
             }

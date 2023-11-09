@@ -1,6 +1,6 @@
 export interface ScoreRequest {
   // The client-generated UUID (token)
-  pass_uuid: string
+  token: string
   // Whether to invalidate the token after this request
   // This means that future calls with the same token (pass_uuid), will return an error.
   // Default: true - invalidate the token after this request

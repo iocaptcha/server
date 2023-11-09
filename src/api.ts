@@ -66,7 +66,7 @@ export class Api {
   public async validate (data: string | ScoreRequest): Promise<ScoreResponse> {
     if (typeof data === 'string') {
       data = {
-        pass_uuid: data,
+        token: data,
         invalidate: true
       }
     }

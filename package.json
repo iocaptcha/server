@@ -1,6 +1,6 @@
 {
   "name": "@iocaptcha/server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ES6/TS server for https://iocaptcha.com - Where security reigns, yet privacy remains.",
   "main": "dist/server.cjs",
   "module": "dist/server.mjs",

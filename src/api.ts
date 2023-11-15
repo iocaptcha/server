@@ -16,7 +16,7 @@ export interface Config {
   proxy: Proxy | null
 }
 export const CONFIG: Config = {
-  api_base_url: 'https://eu-prod.iocaptcha.com/api/v1',
+  api_base_url: 'https://hook.iocaptcha.com/api/v1',
   timeout: 10000,
   proxy: null
 }
